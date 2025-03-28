@@ -1,6 +1,6 @@
 add_newline = false
 # A minimal left prompt
-format = """$directory$character"""
+# format = """$directory$character"""
 palette = "catppuccin_mocha"
 # move the rest of the prompt to the right
 right_format = """$all"""
@@ -15,6 +15,9 @@ success_symbol = '[➜](bold green)'
 
 [git_branch]
 format =  '[$symbol$branch(:$remote_branch)]($style)'
+
+[python]
+format = '[${symbol}(\($virtualenv\))]($style)'
 
 [aws]
 format = '[$symbol(profile: "$profile" )(\(region: $region\) )]($style)'
