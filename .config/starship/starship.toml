@@ -1,5 +1,6 @@
 "$schema" = 'https://starship.rs/config-schema.json'
-format = """$all $fill $cmd_duration
+
+format = """$python$all $fill $cmd_duration$time
 $character"""
 
 add_newline = false
@@ -10,21 +11,27 @@ error_symbol = "[❯](red)"
 
 [cmd_duration]
 # min_time = 10
-show_milliseconds = true
+# show_milliseconds = true
 format = "[$duration](bright-black)"
 
 [fill]
 symbol = ' '
 
 [package]
-format = ''
+format = " "
+
+[time]
+format = " [$time]($style)"
+disabled = false
 
 [python]
 symbol = " "
-format = '[${symbol}(\($virtualenv\) )]($style)'
+format = '[(\($virtualenv\) )]($style)'
 
 [git_branch]
 symbol = " "
+format = '[$branch]($style) '
+style = 'bold green'
 
 [git_metrics]
 disabled = false
