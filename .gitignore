@@ -1,0 +1,5 @@
+# Tmux
+.config/tmux/plugins
+
+# pre-commit
+.pre-commit-config.yaml
